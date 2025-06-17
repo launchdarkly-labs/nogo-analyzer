@@ -30,4 +30,15 @@ http_archive(
 )
 ```
 
+Alternatively, if you are using **bzlmod**, add this to your MODULE.bazel file instead:
+
+```starlark
+module(
+    name = "com_github_sluongng_nogo_analyzer",
+    version = "0.0.1",
+)
+```
+
+Then you can load this module in your project as a Bazel module dependency.
+
 And follow instructions in specific README file of each analyzer collections.
